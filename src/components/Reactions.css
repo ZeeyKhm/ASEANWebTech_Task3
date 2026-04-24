@@ -1,0 +1,42 @@
+/* Reaction Buttons */
+.reaction-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.reaction-btn {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.reaction-btn:hover {
+  background: #e8e8e8;
+  border-color: #bbb;
+}
+
+.reaction-btn.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.reaction-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .reaction-buttons {
+    gap: 8px;
+  }
+
+  .reaction-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

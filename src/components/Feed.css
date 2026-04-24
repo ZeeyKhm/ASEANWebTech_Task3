@@ -1,0 +1,41 @@
+/* Feed Page */
+.feed-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feed-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+}
+
+.empty-state p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .feed-container {
+    max-width: 100%;
+  }
+}

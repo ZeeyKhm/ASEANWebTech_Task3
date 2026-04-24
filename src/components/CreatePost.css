@@ -1,0 +1,61 @@
+/* Create Post Page */
+.create-post-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.create-post-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.coordinates-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.coordinates-section .form-group {
+  margin: 0;
+}
+
+.coordinates-section button {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.char-count {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+  margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .create-post-container {
+    padding: 10px;
+  }
+
+  .create-post-card {
+    padding: 20px;
+  }
+
+  .coordinates-section {
+    grid-template-columns: 1fr;
+  }
+
+  .coordinates-section button {
+    margin-top: 0;
+  }
+}
